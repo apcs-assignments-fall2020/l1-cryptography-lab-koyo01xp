@@ -2,12 +2,42 @@ import java.util.Scanner;
 
 public class Caesar {
     public static String encryptCaesar(String message) {
-        return message;
+        String store = "";
+        for (int i = 0;i < message.length();i++){
+            if ((message.charAt(i) >= 65) && (message.charAt(i) <= 90)) {
+                int a = ((message.charAt(i) - 62) % 26) + 65; 
+                store = store + (char)(a);
+            } 
+            else if ((message.charAt(i) >= 97) && (message.charAt(i) <= 122)) {
+                int b = ((message.charAt(i) - 94) % 26 + 97);
+                store = store + (char)(b);
+            }
+            else {
+                store += message.charAt(i);
+            }
+            
+        }
+        return store;
         // REPLACE THIS WITH YOUR CODE
     }
 
     public static String decryptCaesar(String message) {
-        return message;
+        String store = "";
+        for (int i = 0;i < message.length();i++){
+            if ((message.charAt(i) >= 65) && (message.charAt(i) <= 90)) {
+                int a = ((message.charAt(i) - 68) % 26) + 65; 
+                store = store + (char)(a);
+            } 
+            else if ((message.charAt(i) >= 97) && (message.charAt(i) <= 122)) {
+                int b = ((message.charAt(i) - 97) % 26 + 94);
+                store = store + (char)(b);
+            }
+            else {
+                store += message.charAt(i);
+            }
+            
+        }
+        return store;
         // REPLACE THIS WITH YOUR CODE
     }
 
