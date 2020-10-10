@@ -3,18 +3,18 @@ import java.util.Scanner;
 public class Vigenere {
     public static String encryptVigenere(String message, String key) {
         String store = "";
-        for (int i = 0;i < message.length();i++){
-            char ch = message.charAt(i);
-             if ((ch >= 'a' && ch <= 'z') || ( ch >= 'A' && ch <= 'Z')) {
-                 for (int a = 0; a < message.length(); i++){
-                     char sh = 
-                 }
-                ch = (char) (ch - key);
-                if ((ch > 'z') || (ch > 'Z' && ch < 'a')) {
-                    ch = (char) (ch - 26);
-                }
-            }
-    }
+    //     for (int i = 0;i < message.length();i++){
+    //         char ch = message.charAt(i);
+    //          if ((ch >= 'a' && ch <= 'z') || ( ch >= 'A' && ch <= 'Z')) {
+    //              for (int a = 0; a < message.length(); i++){
+    //                  char sh = 
+    //              }
+    //             ch = (char) (ch - key);
+    //             if ((ch > 'z') || (ch > 'Z' && ch < 'a')) {
+    //                 ch = (char) (ch - 26);
+    //             }
+    //         }
+    // }
         return store;
         
         // REPLACE THIS WITH YOUR CODE
